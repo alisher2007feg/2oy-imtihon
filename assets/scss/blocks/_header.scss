@@ -1,0 +1,199 @@
+.header {
+
+      &__nav {
+            background: rgb(89, 105, 112);
+            background: linear-gradient(87deg, rgba(89, 105, 112, 1) 50%, rgba(89, 105, 127, 1) 56%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 16px;
+            padding-bottom: 10px;
+      }
+
+      &__logo {
+            display: flex;
+            align-items: center;
+
+            gap: 20px;
+            background-color: white;
+            width: 320px;
+            height: 80px;
+            border-radius: 0px 40px 40px 0px;
+
+            &-img {
+                  padding-left: 20px;
+            }
+
+            &-burger {
+                  width: 32px;
+                  height: 32px;
+                  background-color: white;
+                  border: 1px solid #318EB4;
+                  border-radius: 4px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  justify-content: center;
+                  padding-right: 6px;
+
+                  & div {
+                        width: 20px;
+                        height: 2px;
+                        background-color: #000;
+                        margin-bottom: 4px;
+                  }
+
+                  & :nth-child(2) {
+                        width: 26px;
+                        height: 2px;
+                  }
+            }
+      }
+
+      &__paragrif {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: #333333;
+      }
+
+      &__item {
+            display: flex;
+            gap: 40px;
+      }
+
+      &__link {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            &:hover {
+                  color: yellow;
+            }
+
+            &:active {
+                  opacity: 0.4;
+            }
+      }
+
+      &__kirish {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-right: 20px;
+
+            &-link {
+                  border: 1px solid #fff;
+                  border-radius: 4px;
+                  padding: 8px 17px 8px 0;
+                  font-family: 'Montserrat';
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #FFFFFF;
+                  // transition: 0.3s;
+
+                  &:hover {
+                        background-color: #318EB4;
+                        border: none;
+                  }
+
+                  &:active {
+                        opacity: 0.4;
+                  }
+
+                  & img {
+                        margin-right: 10px;
+                  }
+
+
+
+            }
+
+            &-vector {
+                  display: none;
+            }
+
+            &-soroq {
+                  border: 1px solid #FFFFFF;
+                  border-radius: 50%;
+                  padding: 11px;
+            }
+
+            &-soroq1 {
+                  display: none;
+            }
+      }
+
+
+
+}
+
+
+@media(max-width:1024px) {
+      .header {
+            &__nav {
+                  background: #FFFFFF;
+                  border-radius: 0px;
+            }
+
+            &__item {
+                  display: none;
+            }
+
+            &__kirish {
+
+                  &-link {
+
+                        border: 1px solid #318EB4;
+                        border-radius: 4px;
+                        color: #000;
+
+                        &:hover {
+                              color: #fff;
+                        }
+                  }
+
+                  &-vector1 {
+                        display: none;
+                  }
+
+                  &-vector {
+                        display: inline-block;
+                  }
+
+                  &-soroq {
+                        display: none;
+                  }
+
+                  &-soroq1 {
+                        display: inline-block;
+                        border: 1px solid #2D9CDB;
+                        border-radius: 50%;
+                        padding: 11px;
+                  }
+            }
+
+      }
+}
+
+
+@media(max-width:670px) {
+
+      .header {
+            &__anketolog {
+                  display: none;
+            }
+
+            &__kirish {
+                  &-link {
+                        display: none;
+                  }
+            }
+      }
+}

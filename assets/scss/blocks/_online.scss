@@ -1,0 +1,123 @@
+.container {
+      width: 1400px;
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 20px;
+}
+
+.online {
+
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #F4F5F9 32.81%, #F7F7FA 67.71%, rgba(255, 255, 255, 0.5) 100%), #F4F5F9;
+
+      &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            color: #333333;
+            padding-top: 80px;
+      }
+
+      &__blok {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding-bottom: 80px;
+      }
+
+      &__card {
+            width: 350px;
+            max-width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 9px;
+            padding-left: 24px;
+            padding-top: 26px;
+            margin-top: 40px;
+
+            &:hover {
+                  background: #FFFFFF;
+                  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+                  border-radius: 5px;
+            }
+
+            &:active {
+                  background: #FFFFFF;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                  border-radius: 5px;
+            }
+      }
+
+      &__subtitle {
+            width: 270px;
+            height: 44px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            margin-top: 24px;
+      }
+
+      &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 16px;
+            padding-bottom: 46px;
+            margin-left: 20px;
+      }
+
+      &__list {
+            font-family: 'Montserrat';
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #333333;
+            position: relative;
+
+            &::before {
+                  position: absolute;
+                  content: '';
+                  width: 6px;
+                  height: 6px;
+                  background: #EF4744;
+                  left: -20px;
+                  top: 12px;
+                  border-radius: 50%;
+            }
+
+      }
+}
+
+@media(max-width:1024px) {
+      .online {
+            &__title {
+                  font-size: 24px;
+                  line-height: 28px;
+                  text-align: center;
+                  padding-top: 40px;
+            }
+
+            &__blok {
+                  max-width: 100%;
+                  display: grid;
+                  grid-row: 2/ 3;
+                  gap: 24px;
+            }
+      }
+}
+
+@media(max-width:570px) {
+      .online {
+            &__blok {
+                  gap: 0;
+                  padding-bottom: 40px;
+            }
+      }
+
+}
